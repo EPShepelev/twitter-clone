@@ -1,4 +1,6 @@
 import "./App.css";
+import "./Sidebar.js";
+import Sidebar from "./Sidebar.js";
 
 function App() {
   return (
@@ -6,6 +8,7 @@ function App() {
       <h1>Hello from twitter-clone app!</h1>
 
       {/* Sidebar */}
+      <Sidebar />
       {/* Feed */}
       {/* Widgets */}
     </div>
