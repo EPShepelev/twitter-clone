@@ -5,10 +5,7 @@ import Feed from "./Feed.js";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello from twitter-clone app!</h1>
-
-      {/* Sidebar */}
+    <div className="app">
       <Sidebar />
 
       {/* Feed */}
