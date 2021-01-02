@@ -3,7 +3,7 @@ import "./Wigets.css";
 
 function Widgets() {
   return (
-    <div>
+    <div className="widgets">
       <h2>Wigets</h2>
     </div>
   );
