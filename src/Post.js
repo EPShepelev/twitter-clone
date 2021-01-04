@@ -1,6 +1,10 @@
 import React from "react";
 import { Avatar } from "@material-ui/core";
 import VerifedUserIcon from "@material-ui/icons/VerifiedUser";
+import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline";
+import RepeatIcon from "@material-ui/icons/Repeat";
+import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
+import PublishIcon from "@material-ui/icons/Publish";
 import "./Post.css";
 
 function Post({ displayName, userName, verified, text, image, avatar }) {
@@ -25,9 +29,15 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
           </div>
         </div>
         <img
-          src="https://img-cdn.brainberries.co/wp-content/uploads/2015/10/Snapping-Selfies-with-Wild-Animals-Is-a-New-Trend-20.jpg"
+          src="https://www.dailyhaha.com/_pics/llama_wants_some_cormbreab.jpg"
           alt="funny"
         ></img>
+        <div className="post__footer">
+          <ChatBubbleOutlineIcon fontSize="small" />
+          <RepeatIcon fontSize="small" />
+          <FavoriteBorderIcon fontSize="small" />
+          <PublishIcon fontSize="small" />
+        </div>
       </div>
     </div>
   );
