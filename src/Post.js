@@ -18,9 +18,10 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
           <div className="post__headerText">
             <h3>
               {" "}
-              Calav Miraxmetov
-              <span>
+              Calam Miraxmetov{""}
+              <span className="post__headerSpecial">
                 <VerifedUserIcon className="post__bage" />
+                miraX_999
               </span>
             </h3>
           </div>
