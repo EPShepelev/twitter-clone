@@ -5,11 +5,14 @@ import {
   TwitterShareButton,
   TwitterTweetEmbed,
 } from "react-twitter-embed";
+import SearchIcon from "@material-ui/icons/Search";
 
 function Widgets() {
   return (
     <div className="widgets">
-      <h2>Wigets</h2>
+      <div className="widgets__input">
+        <SearchIcon className="widgets__searchIcon" />
+      </div>
     </div>
   );
 }
