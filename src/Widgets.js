@@ -1,7 +1,7 @@
 import React from "react";
 import "./Wigets.css";
 import {
-  TwitterTimeLineEmbed,
+  TwitterTimelineEmbed,
   TwitterShareButton,
   TwitterTweetEmbed,
 } from "react-twitter-embed";
@@ -12,6 +12,16 @@ function Widgets() {
     <div className="widgets">
       <div className="widgets__input">
         <SearchIcon className="widgets__searchIcon" />
+        <input placeholder="Search twitter" type="text" />
+      </div>
+      <div className="widgets__widgetsContainer">
+        <h2>What's happening</h2>
+        <TwitterTweetEmbed tweetId={"858551177860055040"} />
+        <TwitterTimelineEmbed
+          sourceType="profile"
+          screenName="cleverRR"
+          options={{ being: 400 }}
+        />
       </div>
     </div>
   );
