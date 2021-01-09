@@ -23,7 +23,7 @@ function Widgets() {
           options={{ being: 400 }}
         />
         <TwitterShareButton
-          url={"https:\\www.yandex.ru"}
+          url={"https://facebook.com/cleverprogrammer"}
           options={{ text: "React JS awesome", via: "cleverPR" }}
         />
       </div>
