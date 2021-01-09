@@ -19,8 +19,12 @@ function Widgets() {
         <TwitterTweetEmbed tweetId={"858551177860055040"} />
         <TwitterTimelineEmbed
           sourceType="profile"
-          screenName="cleverRR"
+          screenName="cleverPR"
           options={{ being: 400 }}
+        />
+        <TwitterShareButton
+          url={"https:\\www.yandex.ru"}
+          options={{ text: "React JS awesome", via: "cleverPR" }}
         />
       </div>
     </div>
