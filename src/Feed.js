@@ -19,11 +19,6 @@ function Feed() {
         image="https://www.dailyhaha.com/_pics/llama_wants_some_cormbreab.jpg"
         // src="https://festivalsherpa-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/camel.jpg"
       />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
-      <Post />
     </div>
   );
 }
