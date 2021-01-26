@@ -11,29 +11,25 @@ function Post({ displayName, userName, verified, text, image, avatar }) {
   return (
     <div className="post">
       <div className="post__avatar">
-        <Avatar src="https://vjoy.cc/wp-content/uploads/2020/10/5bdaa2f76dee907eb45e3e446b50ce4e.jpg" />
+        <Avatar src={avatar} />
       </div>
       <div className="post__body">
         <div className="post__header">
           <div className="post__headerText">
             <h3>
               {" "}
-              Calam Miraxmetov{""}
+              {displayName}
+              {""}
               <span className="post__headerSpecial">
-                <VerifedUserIcon className="post__bage" />
-                miraX_999
+               {verified && <VerifedUserIcon className="post__bage" />@{userName} }
               </span>
             </h3>
           </div>
           <div className="post__headerDescription">
-            <p>Some text for testing...</p>
+            <p>{text}</p>
           </div>
         </div>
-        <img
-          // src="https://festivalsherpa-wpengine.netdna-ssl.com/wp-content/uploads/2017/01/camel.jpg"
-          src="https://www.dailyhaha.com/_pics/llama_wants_some_cormbreab.jpg"
-          alt="funny"
-        ></img>
+        <img src={image} alt="funny"></img>
         <div className="post__footer">
           <ChatBubbleOutlineIcon fontSize="small" />
           <RepeatIcon fontSize="small" />
