@@ -1,14 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "./TweetBox.css";
 import { Avatar, Button } from "@material-ui/core";
 
 function TweetBox() {
+  const [tweetMessage, setTweeMessage] = useState("");
+
   return (
     <div className="tweetBox">
       <form>
         <div className="tweetBox__input">
           <Avatar src="https://vjoy.cc/wp-content/uploads/2020/10/5bdaa2f76dee907eb45e3e446b50ce4e.jpg" />
-          <input placeholder="what's happening?" type="text"></input>
+          <input
+            onChange={(e) => setTweeMessage(e.target.value)}
+            value={tweetMessage}
+            placeholder="what's happening?"
+            type="text"
+          ></input>
         </div>
         <input
           className="tweetBox__imageInput"
