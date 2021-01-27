@@ -4,6 +4,7 @@ import { Avatar, Button } from "@material-ui/core";
 
 function TweetBox() {
   const [tweetMessage, setTweeMessage] = useState("");
+  const [tweetImage, setTweetImage] = useState("");
 
   return (
     <div className="tweetBox">
@@ -18,6 +19,8 @@ function TweetBox() {
           ></input>
         </div>
         <input
+          onChange={(e) => setTweetImage(e.target.value)}
+          value={tweetImage}
           className="tweetBox__imageInput"
           placeholder="Enter image URL (optional)"
           type="text"
