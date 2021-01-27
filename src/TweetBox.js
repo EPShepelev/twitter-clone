@@ -17,7 +17,9 @@ function TweetBox() {
       avatar="https://vjoy.cc/wp-content/uploads/2020/10/5bdaa2f76dee907eb45e3e446b50ce4e.jpg",
       image: tweetImage,
 
-    })
+    });
+    setTweeMessage("");
+    setTweetImage("");
   }
 
   return (
